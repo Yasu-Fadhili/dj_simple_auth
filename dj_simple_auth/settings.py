@@ -99,6 +99,13 @@ REST_FRAMEWORK = {
     ]
 }
 
+DEFAULT_AUTHENTICATION : {
+    "TokenAuthentication": {
+        "header": "X-Auth",
+        "prefix": "Token",
+    }
+}
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
